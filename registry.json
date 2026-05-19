@@ -1,0 +1,36 @@
+{
+  "apps": {
+    "tmux": {
+      "name": "tmux",
+      "description": "Terminal multiplexer",
+      "config_file": "~/.tmux.conf",
+      "config_types": ["default", "vim-style"],
+      "post_apply": ["tmux source ~/.tmux.conf"],
+      "platforms": ["macOS", "Linux"]
+    },
+    "zsh": {
+      "name": "zsh",
+      "description": "Z shell",
+      "config_file": "~/.zshrc",
+      "config_types": ["default"],
+      "post_apply": ["source ~/.zshrc"],
+      "platforms": ["macOS", "Linux"]
+    },
+    "vim": {
+      "name": "vim",
+      "description": "Vi improved",
+      "config_file": "~/.vimrc",
+      "config_types": ["default"],
+      "post_apply": [],
+      "platforms": ["macOS", "Linux"]
+    },
+    "git": {
+      "name": "git",
+      "description": "Version control",
+      "config_file": "~/.gitconfig",
+      "config_types": ["default"],
+      "post_apply": [],
+      "platforms": ["macOS", "Linux"]
+    }
+  }
+}

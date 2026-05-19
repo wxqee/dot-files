@@ -24,8 +24,22 @@ A simple, intelligent way to manage your dotfiles with AI assistance.
 git clone git@github.com:wxqee/dot-files.git ~/works/dot-files
 cd ~/works/dot-files
 
-# Run the AI workflow
+# Run the AI workflow (recommended)
 claude dot-file.md
+
+# OR use the interactive setup wizard
+./scripts/setup.sh
+```
+
+### Quick Setup
+
+```bash
+# Setup all applications with one command
+./scripts/setup.sh
+
+# Or setup individual applications
+./scripts/install-vim-plugins.sh   # Install Vim plugins via Vundle
+./scripts/install-oh-my-zsh.sh     # Install Oh-My-Zsh with plugins
 ```
 
 ### Usage
@@ -181,7 +195,10 @@ dot-files/
 │   ├── backup.sh            # Backup existing config
 │   ├── apply.sh             # Apply new configuration
 │   ├── validate.sh          # Validate configuration
-│   └── capture.sh           # Capture local config
+│   ├── capture.sh           # Capture local config
+│   ├── setup.sh             # Interactive setup wizard
+│   ├── install-vim-plugins.sh  # Install Vim plugins via Vundle
+│   └── install-oh-my-zsh.sh    # Install Oh-My-Zsh with plugins
 ├── registry.json            # Application registry
 ├── config.json              # User preferences (gitignored)
 ├── dot-file.md              # AI workflow entry point
